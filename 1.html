@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projects/FreeCodeCamp/Survey Form/1.css">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <!--    The whole page    -->
+    <div id="page">
+        <!--    Title and Description    -->
+        <div id="header">
+            <h1 id="title">League Of Legends Tournament</h1>
+            <p id="description">League of Legends Tournament powered by Hazem Allam</p>
+        </div>
+
+        <!--    form    -->
+        <form id="survey_form">
+
+            <!--    Name    -->
+            <div id="form">
+                <label id="name_label" for="name">Name</label>
+                <input 
+                    type="text"
+                    id="name"
+                    class="form"
+                    name="name"
+                    placeholder="Enter your name"
+                    required/>
+            </div>
+
+            
+
+            <!--    Email    -->
+            <div id="form">
+                <label id="email_label" for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    class="form"
+                    name="email"
+                    placeholder="Enter your Email"
+                    required/>
+            </div>
+
+        
+            
+            <!--    number    -->
+            <div id="form">
+                <label id="number_label" for="number">Age 
+                    <span id="note">(optional)</span></label>
+                <input 
+                    type="number" 
+                    id="number"
+                    class="form"
+                    name="number" 
+                    min="1" max="122"
+                    placeholder="Age">
+            </div>
+            
+           
+
+            <!--    dropdown list    -->
+            <div id="form">
+            <p>What is your current Rank ?</p>
+                <select id="dropdown" class="form" name="rank">
+                    <option disabled selected value>Select your current Rank</option>
+                    <option value="iron">Iron</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                    <option value="platinum">Platinum</option>
+                    <option value="diamond">Diamond</option>
+                    <option value="master">Master</option>
+                    <option value="grand master">Grand Master</option>
+                    <option value="challenger">Challenger</option>
+                </select>
+            </div>
+            
+            
+            
+
+            <!--    radio buttons    -->
+            <div id="form">
+                <p>How did you know about this Tournament ?</p>
+
+                <label>
+                <input
+                    type="radio"
+                    value="discord"
+                    id="radio"
+                    name="radio">
+                From Discord server</label>
+
+                <label>
+                <input
+                    type="radio"
+                    value="facebook"
+                    id="radio"
+                    name="radio">
+                From Facebook page</label>
+
+                <label>
+                <input
+                    type="radio"
+                    value="friend"
+                    id="radio"
+                    name="radio">
+                From a friend</label>
+
+            </div>
+            
+
+            <!--    checkboxes    -->
+            <div id="form">
+                <p>What are your main roles ?
+                    <span id="note">(You can check more than one)</span>
+                </p>
+                <label>
+                <input
+                    type="checkbox"
+                    id="checkbox"
+                    name="checkbox"
+                    value="top">
+                Top Laner</label>
+
+                
+                <label>
+                    <input
+                        type="checkbox"
+                        id="checkbox"
+                        name="checkbox"
+                        value="jungler">
+                    Jungler</label>
+                
+                <label>
+                    <input
+                        type="checkbox"
+                        id="checkbox"
+                        name="checkbox"
+                        value="mid">
+                    Mid Laner</label>
+                
+                <label>
+                    <input
+                        type="checkbox"
+                        id="checkbox"
+                        name="checkbox"
+                        value="adc">
+                    ADC</label>
+                
+                <label>
+                    <input
+                        type="checkbox"
+                        id="checkbox"
+                        name="checkbox"
+                        value="support">
+                    Support</label>
+            </div>
+
+            <!--    comments    -->
+            <div id="form">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                    id="comments"
+                    name="comments"
+                    placeholder="Enter your comment here...">
+                </textarea>
+            </div>
+
+            <!--    submit button    -->
+            <div id="form">
+                <button 
+                    type="submit"
+                    id="submit">
+                Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
